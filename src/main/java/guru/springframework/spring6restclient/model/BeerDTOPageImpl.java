@@ -21,6 +21,7 @@ public class BeerDTOPageImpl<BeerDTO> extends PageImpl<guru.springframework.spri
                            @JsonProperty("size") int size,
                            @JsonProperty("totalElements") long total) {
         super(content, PageRequest.of(page, size), total);
+
     }
 
     public BeerDTOPageImpl(List<guru.springframework.spring6restclient.model.BeerDTO> content, Pageable pageable, long total) {
